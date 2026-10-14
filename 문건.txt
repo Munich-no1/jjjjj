@@ -1,0 +1,15 @@
+root / secui00@!
+
+supermode -> blue36e3max17
+
+SNAT
+DNAT
+
+
+1:1 확장변환 -> DNAT 시 사용
+단방향이랑은 뭐가 다르냐? -> 아까 정책이랑 동일합니다.
+NAT 정책에도 SRULE / DRULE
+1:1 확장변환을 하면 반대되는 NAT 정책도 SRULE로 정적으로 박힘
+단방향이면 NAT가 먹는 세션이 인입되면 Drule이 생김
+보통 SNAT 는 출발지가 여러개인 경우가 많습니다.
+DNAT는 보통 서버로 보낼 경우에 많이 써서 1:1로 DNATㄹㄹ 사용
